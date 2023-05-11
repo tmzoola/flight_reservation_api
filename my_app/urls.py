@@ -11,5 +11,6 @@ router.register('reservation',views.ReservationViewSet)
 
 urlpatterns = [
     path('flight-services/',include(router.urls)),
-    path('flight-services/find-flight/',views.find_flight)
+    path('flight-services/find-flight/',views.find_flight),
+    path('flight-services/save_reservation/',views.save_reservation)
 ]
